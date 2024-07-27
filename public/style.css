@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#controls {
+    margin-bottom: 20px;
+}
+
+#building-canvas {
+    border: 1px solid black;
+}
+
+#info-modal {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    z-index: 10;
+}
+
+#drawing-list {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#floor-buttons button {
+    margin: 2px;
+}

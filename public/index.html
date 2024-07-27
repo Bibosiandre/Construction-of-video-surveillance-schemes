@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>План предприятия</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="controls">
+        <button id="add-rect">Добавить прямоугольник</button>
+        <button id="add-text">Добавить текст</button>
+        <input type="file" id="camera-icon-upload">
+        <button id="add-camera">Добавить камеру</button>
+        <button id="delete">Удалить</button>
+        <button id="zoom-in">Увеличить</button>
+        <button id="zoom-out">Уменьшить</button>
+        <button id="add-floor">Добавить этаж</button>
+        <button id="delete-floor">Удалить этаж</button>
+        <button id="add-drawing">Добавить чертеж</button>
+        <button id="select-drawing">Выбрать чертеж</button>
+        <button id="delete-drawing">Удалить чертеж</button>
+        <select id="rect-color">
+            <option value="white">Белый</option>
+            <option value="black">Черный</option>
+            <option value="lightblue">Голубой</option>
+            <option value="lightgreen">Светло-зеленый</option>
+            <option value="lightyellow">Светло-желтый</option>
+            <option value="lightred">Светло-красный</option>
+        </select>
+        <select id="rect-border">
+            <option value="black">Черный</option>
+            <option value="blue">Синий</option>
+            <option value="green">Зеленый</option>
+            <option value="yellow">Желтый</option>
+            <option value="red">Красный</option>
+        </select>
+        <input type="text" id="search-camera" placeholder="Поиск камеры по названию">
+        <div id="floor-buttons"></div>
+    </div>
+    <div id="drawing-list" style="display: none;"></div>
+    <canvas id="building-canvas"></canvas>
+    <div id="info-modal">
+        <form id="camera-info-form">
+            <label for="switch-name">Название коммутатора:</label>
+            <input type="text" id="switch-name" name="switch-name">
+            <label for="port">Порт:</label>
+            <input type="text" id="port" name="port">
+            <label for="camera-name">Название камеры:</label>
+            <input type="text" id="camera-name" name="camera-name">
+            <label for="ip-address">IP адрес:</label>
+            <input type="text" id="ip-address" name="ip-address">
+            <label for="vlan">VLAN:</label>
+            <input type="text" id="vlan" name="vlan">
+            <button type="submit">Сохранить</button>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.4.0/fabric.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
